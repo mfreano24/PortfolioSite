@@ -17,6 +17,36 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
 </head>
+<script>
+    function ResumeToggle(){
+        var res = document.getElementById("resume-nav-section");
+
+        if(res.style.display == "none"){
+            res.style.display = "block";
+            document.getElementById("res-header").innerHTML = "&#9652 Resume &#9652";
+        }
+        else{
+            res.style.display = "none";
+            document.getElementById("res-header").innerHTML = "&#9662 Resume &#9662";
+        }
+    }
+
+    function PortfolioToggle(){
+        var port = document.getElementById("portfolio-nav-section");
+        
+        if (port.style.display == "none") {
+            port.style.display = "block";
+            document.getElementById("port-header").innerHTML = "&#9652 Portfolio &#9652";
+        }
+        else{
+            port.style.display = "none";
+            document.getElementById("port-header").innerHTML = "&#9662 Portfolio &#9662";
+        }
+    }
+
+
+</script>
+
 
 <body id="page-top">
     <!-- Navigation-->
@@ -31,12 +61,26 @@
                 class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Home</a></li>
+            </br>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="javascript:ResumeToggle()" id="res-header">&#9652 Resume &#9652</a>
+                    <ul class="navbar-nav" id="resume-nav-section">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+                    </ul>
+                </li>
+            </br>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger"  href="javascript:PortfolioToggle()" id="port-header">&#9652 Portfolio &#9652</a>
+                </hr>
+                    <ul class="navbar-nav" id="portfolio-nav-section">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#soundbarrier">Sound Barrier</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#alch">Alchemancer</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#burger">Burger Truckers</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#other">Other</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </nav>
@@ -71,7 +115,7 @@
                     games.
                 </p>
                 <p class="lead mb-5">
-                    Below are links to my resume, Github, and Itch pages, where you can find my work.
+                    Below are links to my resume, Github, and Itch pages, where you can find my work. You can also check out an overview of some of my projects in the navigation bar.
                 </p>
                 <div class="social-icons">
                     <a class="social-icon" href="https://www.linkedin.com/in/michael-freaney-0b2129190/"
@@ -109,6 +153,7 @@
                             <li>Learn the nuances of virtual reality through the creation of job training software and
                                 games.</li>
                             <li>Apply calculus and linear algebra knowledge to 3D spaces.</li>
+                            <li>Maintain a large codebase and debug networked multiplayer code.</li>
                         </p>
                     </div>
                     <div class="flex-shrink-0"><span class="text-primary">December 2020 - January 2021</span></div>
@@ -133,10 +178,6 @@
             </div>
         </section>
         <hr class="m-0" />
-        <!-- Skills-->
-        <section class="resume-section" id="portfolio">
-            portfolia
-        </section>
         <section class="resume-section" id="skills">
             <div class="resume-section-content">
                 <h2 class="mb-5">Skills</h2>
@@ -166,7 +207,7 @@
                 </ul>
             </div>
         </section>
-
+        
         <hr class="m-0" />
         <!-- Interests-->
         <section class="resume-section" id="interests">
@@ -191,6 +232,51 @@
             </div>
         </section>
         <hr class="m-0" />
+        <section class="resume-section" id="soundbarrier">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Sound Barrier</h2>
+                <h5 class="mb-5">Won 2nd place in the Fall 2020 TAGD Semester Game Jam</h5>
+                video here</br>
+                screenshot row here</br>
+                <h3 class="mb-5">Development Summary</h3>
+                <h5 class="mb-5">What I worked on</h5>
+                <h5 class="mb-5">What went well</h5>
+                <h5 class="mb-5">What didn't go as well, lessons learned</h5>
+                
+        </section>
+        <hr class="m-0" />
+        <section class="resume-section" id="alch">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Alchemancer</h2>
+                <h5 class="mb-5">Entry in the Fall 2019 TAGD Semester Game Jam</h5>
+                video here</br>
+                screenshot row here</br>
+                <h3 class="mb-5">Development Summary</h3>
+                <h5 class="mb-5">What I worked on</h5>
+                <h5 class="mb-5">What went well</h5>
+                <h5 class="mb-5">What didn't go as well, lessons learned</h5>
+        </section>
+        <hr class="m-0" />
+        <section class="resume-section" id="burger">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Burger Truckers</h2>
+                <h5 class="mb-5">Entry for the Gamemaker's Toolkit 2020 Game Jam</h5>
+                video here</br>
+                screenshot row here</br>
+                <h3 class="mb-5">Development Summary</h3>
+                <h5 class="mb-5">What I worked on</h5>
+                <h5 class="mb-5">What went well</h5>
+                <h5 class="mb-5">What didn't go as well, lessons learned</h5>
+        </section>
+        <hr class="m-0" />
+        <section class="resume-section" id="other">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Other Notable Projects/Demos</h2>
+                <h3 class="mb-5">Perlin Noise-based Procedural Generation</h3>
+                <h3 class="mb-5">Twitch API Roguelike</h3>
+                <h3 class="mb-5">Pitch Black Cave</h3>
+        </section>
+        
     </div>
     <!-- Bootstrap core JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
