@@ -75,9 +75,10 @@
                 </hr>
                     <ul class="navbar-nav" id="portfolio-nav-section">
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#soundbarrier">Sound Barrier</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#raytracer">C++ Raytracer</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#stellar">Stellar Scalers</a></li>
-                        <!--<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#burger">Burger Truckers</a></li>-->
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#other">Other</a></li>
+                        <!--<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#chainlink">IK Chain Links</a></li>-->
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#other">Other Tech Demos</a></li>
                     </ul>
                 </li>
             </ul>
@@ -241,6 +242,72 @@
                 
         </section>
         <hr class="m-0" />
+        <section class="resume-section" id="raytracer">
+            <div class="resume-section-content">
+                <h2>Single-image Raytracer</h2>
+                <h5>Final Project for Computer Graphics</h5>
+                <h5>May 2021</h5>
+                </br>
+                <img src="assets/img/raytracer/colorglass_scene9.png" style="width: 300px;">
+                <img src="assets/img/raytracer/colorglass_scene4.png" style="width: 300px;"></br>
+                <img src="assets/img/raytracer/finalrun_scene3.png" style="width: 300px;">
+                </br></br>
+                A simulation of a single image being raytraced based on text input.</br></br>
+                <h3>Development Summary</h3>
+                <h5>What I worked on</h5>
+                <ul>
+                    <li>Basis for ray-tracing algorithms</li>
+                    <ul>
+                        <li>Shoot ray from camera in pixel direction</li>
+                        <li>Check material if a hit is made</li>
+                    </ul>
+                    <li>Reflection and Refraction based materials</li>
+                </ul>
+                <h5>What went well</h5>
+                <ul>
+                    <li>Project is left in a very open-ended state, as I learn more about graphics programming I may find myself adding more features such as octrees, texture mapping, etc.</li>
+                    <li>Very carefully planned out systems design as to ensure optimal code cleanliness.</li>
+                </ul>
+                <h5>What didn't go as well, lessons learned</h5>
+                <ul>
+                    <li>Had to work out a few optimization issues here and there, particularly with meshes.</li>
+                    <li>Due to this being a project used for school, I cannot publicly post the code, though I can provide it on request.</li>
+                </ul>
+        </section>
+
+        <section class="resume-section" id="chainlink">
+            <div class="resume-section-content">
+                <h2>Inverse Kinematics Solver in 2D</h2>
+                <h5>Personal Project</h5>
+                <h5>May 2021</h5>
+                </br>
+                <img src="assets/img/raytracer/colorglass_scene9.png" style="width: 300px;">
+                <img src="assets/img/raytracer/colorglass_scene4.png" style="width: 300px;"></br>
+                <img src="assets/img/raytracer/finalrun_scene3.png" style="width: 300px;">
+                </br></br>
+                A simulation of a single image being raytraced based on text input.</br></br>
+                <h3>Development Summary</h3>
+                <h5>What I worked on</h5>
+                <ul>
+                    <li>Basis for ray-tracing algorithms</li>
+                    <ul>
+                        <li>Shoot ray from camera in pixel direction</li>
+                        <li>Check material if a hit is made</li>
+                    </ul>
+                    <li>Reflection and Refraction based materials</li>
+                </ul>
+                <h5>What went well</h5>
+                <ul>
+                    <li>Project is left in a very open-ended state, as I learn more about graphics programming I may find myself adding more features such as octrees, texture mapping, etc.</li>
+                    <li>Very carefully planned out systems design as to ensure optimal code cleanliness.</li>
+                </ul>
+                <h5>What didn't go as well, lessons learned</h5>
+                <ul>
+                    <li>Had to work out a few optimization issues here and there, particularly with meshes.</li>
+                    <li>Due to this being a project used for school, I cannot publicly post the code, though I can provide it on request.</li>
+                </ul>
+        </section>
+
         <section class="resume-section" id="stellar">
             <div class="resume-section-content">
                 <h2>Stellar Scalers</h2>
@@ -290,6 +357,7 @@
                             src="assets/img/itchio-textless-white.png" style="height: 25px;"></a>
                 </div>
         </section>
+
         <!--
         <hr class="m-0" />
         <section class="resume-section" id="restless">
@@ -339,12 +407,10 @@
         <section class="resume-section" id="other">
             <div class="resume-section-content">
                 <h2 class="mb-5">Other Notable Projects/Demos</h2>
-                <h3>Perlin Noise-based Procedural Generation</h3>
-                <iframe width="800" height="450" src="https://www.youtube.com/embed/LXanDdjiNeA" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe></br></br>
-                Usage of Perlin Noise in Unity to generate a world map (later a heightmap for Terrain Data)- refinement of the noise
-                using octaves and classification of height values into different "land types" such as water, sand, mountains, etc.
+                <h3>B-spline generation in OpenGL</h3>
+                Creation of randomly generated meshes to explore or procedurally place objects.</br>
+                <img src="assets/img/Bspline/Bspline.gif" style="width: 600px;">
+                <img src="assets/img/Bspline/rawnoise.png" style="width: 600px;">
             </br></br>
                 <h3>Twitch API Roguelike</h3>
                 <iframe width="800" height="450" src="https://www.youtube.com/embed/r7fvLWRySJs" frameborder="0"
@@ -357,7 +423,8 @@
                 <img src="assets/img/twitch-game/Screenshot (439).png" style="width: 200px;">
         </br>
                 Creating randomly generated dungeon sets with a binary tree.
-
+            </br></br>
+            
         </section>
     </div>
     <!-- Bootstrap core JS-->
